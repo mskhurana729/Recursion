@@ -1,0 +1,26 @@
+{
+  "name": "recursion",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mskhurana729/Recursion.git"
+  },
+  "keywords": [],
+  "author": "Manpreet Singh Khurana <mskhurana729@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mskhurana729/Recursion/issues"
+  },
+  "homepage": "https://github.com/mskhurana729/Recursion#readme",
+  "description": "",
+  "dependencies": {
+    "prettier": "^3.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
