@@ -40,6 +40,8 @@ function fibs(num) {
 console.log(fibs(8));
 
 function fibsRec(num) {
+  console.log('This was printed recursively');
+
   num = +num;
   if (num === 1) {
     return 0;
@@ -68,4 +70,29 @@ function getFibArr(num, arr = []) {
   //   }
   //   return arr;
 }
-console.log(getFibArr(10));
+// console.log(getFibArr(10));
+
+function optimizedFib(num) {
+  console.log('This was printed recursively');
+
+  if (num == 0) {
+    let p = { first: 0, second: 0 };
+    return p;
+  } else if (num == 1) {
+    let p = { first: 0, second: 1 };
+    return p;
+  } else {
+    let p1 = optimizedFib(num - 1);
+    // console.log(p1);
+    let p2 = { first: 0, second: 0 };
+
+    p2.first = p1.first + p1.second;
+    p2.second = p1.first;
+    // console.log(p2.first);
+    return p2;
+  }
+}
+function fibOptimized(num) {
+  return optimizedFib(num).first;
+}
+console.log(fibOptimized(8));
